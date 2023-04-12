@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </Link>
                 </li>
                 <li>
-                  <Link href='esg' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
+                  <Link href='about' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
                     Sobre Nós
                   </Link>
                 </li>
@@ -53,17 +53,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   </Link>
                 </li>
                 <li>
-                  <Link href='esg' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
+                  <Link href='forum' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
                     Fórum
                   </Link>
                 </li>
                 <li>
-                  <Link href='esg' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
+                  <Link href='login' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
                     Login
                   </Link>
                 </li>
                 <li>
-                  <Link href='esg' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
+                  <Link href='register' className='link block py-2 pl-3 pr-4 rounded md:p-0'>
                     Registrar
                   </Link>
                 </li>
