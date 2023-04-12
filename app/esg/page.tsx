@@ -3,10 +3,11 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Esg() {
   return (
+    
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Hello World
+      <h1 className="text-6xl font-bold">Hello World ESG</h1>
     </main>
   )
 }

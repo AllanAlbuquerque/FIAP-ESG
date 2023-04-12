@@ -1,0 +1,16 @@
+.link {
+  color: #212121;
+}
+
+.link:hover {
+  background: linear-gradient(89.8deg, #66836a 0.17%, #97b29a 99.83%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-decoration: underline;
+}
+
+.logo {
+  background: rgba(132, 190, 143, 0.44);
+  filter: blur(225px);
+}
