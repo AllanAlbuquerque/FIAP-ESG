@@ -6,19 +6,19 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <main>
-      <article>
-        <section>
-          <h2>Transformando hábitos sustentáveis em benefícios compartilhados.</h2>
-          <h2>
+      <article className='flex'>
+        <section className='w-1/2 ps-8 mt-14'>
+          <h2 className='text-4xl'>Transformando hábitos sustentáveis em benefícios compartilhados.</h2>
+          <h2 className='text-4xl'>
             <strong>Seja parte da mudança!</strong>
           </h2>
-          <p>
+          <p className='mt-8'>
             A EcoMind transforma a sustentabilidade em uma aventura com nossos métodos ESG gamificados! Engaje seus colaboradores e contribua para um
             futuro mais sustentável.
           </p>
         </section>
-        <section>
-          <Image src='/logo.png' alt='ESG Logo' className='h-8 mr-3' width={128} height={23} priority />
+        <section className='w-1/2'>
+          <img src="/tree.png" alt="Mão segurando uma árvore" />
         </section>
       </article>
     </main>
