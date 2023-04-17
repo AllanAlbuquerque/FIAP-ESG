@@ -1,0 +1,18 @@
+.descript {
+  color: #fff !important;
+  background-color: #3a443c;
+  padding: 2%;
+}
+
+.text-green {
+  color: #709276;
+}
+
+.bg-4 {
+  background: linear-gradient(77.3deg, #F1F1F1 -4.64%, rgba(217, 217, 217, 0.6) 102.67%);
+}
+
+.img-config {
+  width: 22%;
+  height: auto;
+}
