@@ -121,16 +121,20 @@ const Home = () => {
           <div className='text-center p-8'>
             <h2 className='text-black font-bold text-xl mx-8'>TROQUE SUAS ATIVIDADES POR RECOMPENSAS!</h2>
             <p className='mx-16 mt-2'>
-              Ao adotar posturas focadas no ESG em seu dia a dia, dentro e fora do ambiente de trabalho, você acumula ecocoins <br /> que podem ser trocados
-              por uma ampla variedade de recompensas. Desde cartões-presentes até viagens!
+              Ao adotar posturas focadas no ESG em seu dia a dia, dentro e fora do ambiente de trabalho, você acumula ecocoins <br /> que podem ser
+              trocados por uma ampla variedade de recompensas. Desde cartões-presentes até viagens!
             </p>
           </div>
         </div>
       </article>
       <article className='mt-16'>
-      <h1 className='text-center text-4xl font-bold mb-8'>
+        <h1 className='text-center text-4xl font-bold mb-8'>
           SUA AJUDA FAZ TODA <span className='text-green'>DIFERENÇA!</span>
         </h1>
+        <div className='flex flex-col mt-8 r w-full rounded-3xl'>
+          <img src='/home/carr.png' alt='' className='rounded-t-3xl m-auto' />
+          <button className='mt-8 mx-auto rounded-full py-2 px-8 text-center text-white bg-black'>Fazer Parte da EcoMind!</button>
+        </div>
       </article>
     </main>
   );
