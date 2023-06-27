@@ -1,0 +1,12 @@
+footer{
+    background-color: #212121;
+    height: 54px;
+}
+
+footer .name{
+    color:   #999999;
+}
+
+footer .politica, .termos{
+    color:  #808080;
+}

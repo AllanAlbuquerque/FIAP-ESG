@@ -16,3 +16,21 @@
   width: 22%;
   height: auto;
 }
+
+.footer{
+  background-color: #212121;
+  margin-top: 91px;
+}
+
+.footer-menu{
+  width: 750px;
+  height: 205px;
+}
+
+.footer-menu li{
+  line-height: 30px;
+}
+
+.copyRight{
+  color: #777;
+}
