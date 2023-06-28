@@ -11,9 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      \
       <body>
-        <nav className='bg-white'>
+        <nav className='bg-white hidden md:inline'>
           <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
             <Link href='/' className='flex items-center'>
               <Image src='/logo.png' alt='ESG Logo' className='h-8 mr-3' width={128} height={23} priority />

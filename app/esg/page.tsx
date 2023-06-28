@@ -21,13 +21,14 @@ export default function Esg() {
 
 
 
-        <section className='flex w-full h-90'>
-          <div className='w-1/4 h-full me-4 rounded-lg'>
+        <section className='flex w-full h-90 flex-col md:flex-row'>
+
+          <div className=' h-full me-4 rounded-lg w-full md:w-1/4'>
             <img className='mt-2' src="/esg/char.svg" alt="" />
           </div>
 
 
-          <div className='w-2/4 h-full bg-zinc-200 me-4 rounded-lg p-3 shadow-xl'>
+          <div className=' h-full bg-zinc-200 me-4 rounded-lg p-3 shadow-xl w-full md:w-2/4'>
             <div className='border-b-2 border-zinc-300'>
               <h1 className='font-bold pb-3 pt-3'> MEUS PONTOS </h1>
             </div>
@@ -66,7 +67,7 @@ export default function Esg() {
 
 
 
-          <div className='w-1/4 h-full bg-zinc-200 rounded-lg p-3 shadow-xl'>
+          <div className='w-1/4 h-full bg-zinc-200 rounded-lg p-3 shadow-xl  w-full md:w-1/4'>
             <div className='mt-3 border-b-2 border-zinc-300'>
               <div className='flex justify-around items-center pb-3'>
                 <h1 className='font-bold'> MEU NÍVEL </h1>
@@ -87,9 +88,9 @@ export default function Esg() {
         </section>
 
 
-        <section className='flex w-full mt-16'>
+        <section className='flex w-full mt-16 flex-col md:flex-row'>
 
-          <div className='w-1/4 me-4 h-fit rounded-lg'>
+          <div className=' me-4 h-fit rounded-lg  w-full md:w-1/4'>
 
             <div className='bg-zinc-200 p-3 mb-8 shadow-xl rounded-lg'>
               <div>
@@ -175,7 +176,7 @@ export default function Esg() {
 
 
 
-          <div className='bg-zinc-200 w-2/4 me-4 p-3 h-fit rounded-lg shadow-xl'>
+          <div className='bg-zinc-200  me-4 p-3 h-fit rounded-lg shadow-xl w-full md:w-2/4'>
             <div className='border-b-2 border-zinc-300 pb-3 pt-3'>
               <h1 className='font-bold'>TROCAR ECOCOINS POR BENEFÍCIOS</h1>
             </div>
@@ -184,15 +185,15 @@ export default function Esg() {
               <h1 className='font-bold'> Categorias </h1>
             </div>
 
-            <div className='flex justify-evenly'>
-              <img className='rounded-xl' src="/esg/gift.png" alt="" />
+            <div className='flex justify-evenly flex-col md:flex-row'>
+              <img className='rounded-xl' src="/esg/gift.png"  alt="" />
 
               <img className='rounded-xl' src="/esg/perso.png" alt="" />
 
               <img className='rounded-xl' src="/esg/treathe.png" alt="" />
             </div>
 
-            <div className='flex justify-evenly mt-4'>
+            <div className='flex justify-evenly mt-4 flex-col md:flex-row'>
               <img className='rounded-xl' src="/esg/airplane.png" alt="" />
 
               <img className='rounded-xl' src="/esg/car-dashboard.png" alt="" />
@@ -200,13 +201,13 @@ export default function Esg() {
               <img className='rounded-xl' src="/esg/products.png" alt="" />
             </div>
 
-            <div className='w-full mt-4 pb-3'>
+            <div className='w-full mt-4 pb-3 '>
               <img className='rounded-xl w-full' src="/esg/next.png" alt="" />
             </div>
           </div>
 
 
-          <div className='bg-zinc-200 w-1/4 me-4 p-3 h-fit rounded-lg shadow-xl'>
+          <div className='bg-zinc-200 w-1/4 me-4 p-3 h-fit rounded-lg shadow-xl w-full md:w-1/4'>
             <div className='border-b-2 border-zinc-300 pb-3 pt-3'>
               <h1 className='font-bold'>RANKING</h1>
             </div>
