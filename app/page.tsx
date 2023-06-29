@@ -1,7 +1,6 @@
 'use client';
 import { Inter } from 'next/font/google';
 import './page.css';
-import Image from 'next/image'
 
 
 const inter = Inter({ subsets: ['latin'] });
@@ -26,9 +25,9 @@ const Home = () => {
 
   return (
     <>
-      <main>
-        <article className='flex'>
-          <section className='w-1/2 ps-8 mt-48'>
+      <main className='mb-4'>
+        <article className='flex sm:flex-row flex-col-reverse'>
+          <section className='sm:w-1/2 ps-8 mt-48 w-full'>
             <h2 className='text-4xl'>Transformando hábitos sustentáveis em benefícios compartilhados.</h2>
             <h2 className='text-4xl'>
               <strong>Seja parte da mudança!</strong>
@@ -38,16 +37,16 @@ const Home = () => {
               futuro mais sustentável.
             </p>
           </section>
-          <section className='w-1/2'>
-            <Image src='/home/tree.svg' alt='Mão segurando uma árvore' />
+          <section className='sm:w-1/2 w-full'>
+            <img src='/home/tree.svg' alt='Mão segurando uma árvore' />
           </section>
         </article>
         <article className='descript'>
           <h1 className='text-center text-3xl text-white'>
             Uma plataforma dedicada a incentivar posturas focadas no <br /> ESG (Environmental, Social and Governance)!
           </h1>
-          <section className='flex items-center'>
-            <div className='w-1/2 p-8'>
+          <section className='flex sm:flex-row flex-col items-center'>
+            <div className='sm:w-1/2 p-8 w-full'>
               <p className='mb-8 text-white'>
                 Nós acreditamos que pequenas ações diárias podem fazer uma grande diferença, tanto dentro como fora do ambiente de trabalho, e é por
                 isso que queremos encorajar todos a participar dessa mudança positiva.
@@ -60,7 +59,7 @@ const Home = () => {
                 <button id='Environmental'>
                   <div className='tit flex flex-column items-center justify-center'>
                     <div className='flex items-center justify-center font-bold'>
-                      <Image src='/home/Sustainability.png' alt={''} />
+                      <img src='/home/Sustainability.png'  />
                       <h4 className='text-white'>Environmental</h4>
                     </div>
 
@@ -69,21 +68,21 @@ const Home = () => {
                 </button>
                 <button id='Social'>
                   <div className='tit flex items-center justify-center font-bold'>
-                    <Image src='/home/Users.png' alt={''} />
+                    <img src='/home/Users.png'  />
                     <h4 className='text-white'>Social</h4>
                     <p className='buttonDescr'></p>
                   </div>
                 </button>
                 <button id='Governance'>
                   <div className='tit flex items-center justify-center font-bold'>
-                    <Image src='/home/Museum.png' alt={''} />
+                    <img src='/home/Museum.png'  />
                     <h4 className='text-white'>Governance</h4>
                     <p className='buttonDescr'></p>
                   </div>
                 </button>
               </div>
             </div>
-            <div className='w-1/2 p-8'>
+            <div className='sm:w-1/2 p-8 w-full'>
               <img src='/home/esgVideo.png' alt='Vídeo sobre a importância do ESG' />
             </div>
           </section>
@@ -92,8 +91,8 @@ const Home = () => {
           <h1 className='text-center text-4xl font-bold mb-8'>
             PRATIQUE O BEM E <br /> <span className='text-green'>GANHE RECOMPENSAS!</span>
           </h1>
-          <div className='flex justify-center'>
-            <div className='flex flex-col mx-2 bg-4 rounded-3xl img-config'>
+          <div className='flex sm:flex-row flex-col justify-center'>
+            <div className='flex flex-col sm:mx-2 mb-2 bg-4 rounded-3xl img-config'>
               <img src='/home/progressStones.png' alt='' className='rounded-t-3xl' />
               <div className='text-center p-8'>
                 <h2 className='text-black font-bold text-xl mx-8'>
@@ -102,14 +101,14 @@ const Home = () => {
                 <p className='mx-8 mt-2'>Eleve seu nível onde a patente das pedras é a base do seu progresso!</p>
               </div>
             </div>
-            <div className='flex flex-col mx-2 bg-4 rounded-3xl img-config'>
+            <div className='flex flex-col sm:mx-2 mb-2 bg-4 rounded-3xl img-config'>
               <img src='/home/family.png' alt='' className='rounded-t-3xl' />
               <div className='text-center p-8'>
                 <h2 className='text-black font-bold text-xl mx-8'>DESAFIE SEUS AMIGOS</h2>
                 <p className='mx-8 mt-2'>Desafie seus amigos e aposte seus Ecocoins para ganhar o dobro!</p>
               </div>
             </div>
-            <div className='flex flex-col mx-2 bg-4 rounded-3xl img-config'>
+            <div className='flex flex-col sm:mx-2 mb-2 bg-4 rounded-3xl img-config'>
               <img src='/home/loading.png' alt='' className='rounded-t-3xl' />
               <div className='text-center p-8'>
                 <h2 className='text-black font-bold text-xl mx-8'>Verifique o progresso</h2>
@@ -140,7 +139,7 @@ const Home = () => {
           </div>
         </article>
       </main>
-      <footer className='footer flex justify-between px-14 py-14' >
+      <footer className='hidden sm:flex footer justify-between px-14 py-14' >
         <div>
           <img src='/logofooter.svg' className='pb-10' />
           <span className='text-white copyRight'>copyright © 2023 | Todos os direitos reservados.</span>
