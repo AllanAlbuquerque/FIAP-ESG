@@ -1,6 +1,8 @@
 'use client';
 import { Inter } from 'next/font/google';
 import './page.css';
+import Image from 'next/image'
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -37,7 +39,7 @@ const Home = () => {
             </p>
           </section>
           <section className='w-1/2'>
-            <img src='/home/tree.svg' alt='Mão segurando uma árvore' />
+            <Image src='/home/tree.svg' alt='Mão segurando uma árvore' />
           </section>
         </article>
         <article className='descript'>
@@ -58,7 +60,7 @@ const Home = () => {
                 <button id='Environmental'>
                   <div className='tit flex flex-column items-center justify-center'>
                     <div className='flex items-center justify-center font-bold'>
-                      <img src='/home/Sustainability.png' />
+                      <Image src='/home/Sustainability.png' alt={''} />
                       <h4 className='text-white'>Environmental</h4>
                     </div>
 
@@ -67,14 +69,14 @@ const Home = () => {
                 </button>
                 <button id='Social'>
                   <div className='tit flex items-center justify-center font-bold'>
-                    <img src='/home/Users.png' />
+                    <Image src='/home/Users.png' alt={''} />
                     <h4 className='text-white'>Social</h4>
                     <p className='buttonDescr'></p>
                   </div>
                 </button>
                 <button id='Governance'>
                   <div className='tit flex items-center justify-center font-bold'>
-                    <img src='/home/Museum.png' />
+                    <Image src='/home/Museum.png' alt={''} />
                     <h4 className='text-white'>Governance</h4>
                     <p className='buttonDescr'></p>
                   </div>

@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Esg() {
   return (
     <>
-      <main className="flex flex-col p-14 mt-8 mb-5">
+      <main className="flex flex-col p-14 mt-0 md:mt-8 mb-5">
 
-        <section className='flex justify-between w-full mb-6'>
+        <section className='flex justify-between flex justify-items-center	md:justify-items-start w-full mb-6'>
           <h1 className="text-3xl font-bold">Meu perfil</h1>
 
           <div className='flex '>
@@ -23,17 +23,17 @@ export default function Esg() {
 
         <section className='flex w-full h-90 flex-col md:flex-row'>
 
-          <div className=' h-full me-4 rounded-lg w-full md:w-1/4'>
-            <img className='mt-2' src="/esg/char.svg" alt="" />
+          <div className=' h-full me-4 rounded-lg w-full md:w-1/4 mb-5 md:mb-0'>
+            <img className='mt-2 mx-auto md:mx-0' src="/esg/char.svg" alt="" />
           </div>
 
 
-          <div className=' h-full bg-zinc-200 me-4 rounded-lg p-3 shadow-xl w-full md:w-2/4'>
+          <div className=' h-full bg-zinc-200 me-4 rounded-lg p-3 shadow-xl w-full md:w-2/4 mb-5 md:mb-0'>
             <div className='border-b-2 border-zinc-300'>
               <h1 className='font-bold pb-3 pt-3'> MEUS PONTOS </h1>
             </div>
 
-            <div className='flex items-center justify-between'>
+            <div className='flex items-center justify-between flex-col md:flex-row'>
               <div className='flex items-center'>
                 <img className='mt-2' src="/esg/coin.svg" alt="" />
 
@@ -43,7 +43,7 @@ export default function Esg() {
                 </div>
               </div>
 
-              <button className='mr-3 border-2 border-gray-500 text-gray-500 p-2 rounded-lg font-bold'>Como ganhar mais ecocoins?</button>
+              <button className='mr-3 border-2 border-gray-500 text-gray-500 p-2 rounded-lg font-bold mb-5 md:mb-0'>Como ganhar mais ecocoins?</button>
             </div>
 
             <div className='pl-3 pb-3 pr-3'>
@@ -67,7 +67,7 @@ export default function Esg() {
 
 
 
-          <div className='w-1/4 h-full bg-zinc-200 rounded-lg p-3 shadow-xl  w-full md:w-1/4'>
+          <div className='w-1/4 h-full bg-zinc-200 rounded-lg p-3 shadow-xl  w-full md:w-1/4 pb-5 md:pb-3'>
             <div className='mt-3 border-b-2 border-zinc-300'>
               <div className='flex justify-around items-center pb-3'>
                 <h1 className='font-bold'> MEU NÍVEL </h1>
@@ -88,7 +88,7 @@ export default function Esg() {
         </section>
 
 
-        <section className='flex w-full mt-16 flex-col md:flex-row'>
+        <section className='flex w-full mt-16 flex-col md:flex-row  mt-0 md:mb-16' >
 
           <div className=' me-4 h-fit rounded-lg  w-full md:w-1/4'>
 
@@ -143,7 +143,7 @@ export default function Esg() {
               </div>
             </div>
 
-            <div className='bg-zinc-200 p-3 shadow-lg rounded-xl'>
+            <div className='bg-zinc-200 p-3 shadow-lg rounded-xl mb-5 md:mb-0'>
               <div className='border-b-2 border-zinc-300 pb-3 pt-3'>
                 <h1 className='font-bold'>DESAFIOS</h1>
               </div>
@@ -176,7 +176,7 @@ export default function Esg() {
 
 
 
-          <div className='bg-zinc-200  me-4 p-3 h-fit rounded-lg shadow-xl w-full md:w-2/4'>
+          <div className='bg-zinc-200  me-4 p-3 h-fit rounded-lg shadow-xl w-full md:w-2/4 mb-5 md:mb-0'>
             <div className='border-b-2 border-zinc-300 pb-3 pt-3'>
               <h1 className='font-bold'>TROCAR ECOCOINS POR BENEFÍCIOS</h1>
             </div>
@@ -186,23 +186,23 @@ export default function Esg() {
             </div>
 
             <div className='flex justify-evenly flex-col md:flex-row'>
-              <img className='rounded-xl' src="/esg/gift.png"  alt="" />
+              <img className='rounded-xl mb-5 md:mb-0' src="/esg/gift.png"  alt="" />
 
-              <img className='rounded-xl' src="/esg/perso.png" alt="" />
+              <img className='rounded-xl mb-5 md:mb-0' src="/esg/perso.png" alt="" />
 
-              <img className='rounded-xl' src="/esg/treathe.png" alt="" />
+              <img className='rounded-xl mb-5 md:mb-0' src="/esg/treathe.png" alt="" />
             </div>
 
             <div className='flex justify-evenly mt-4 flex-col md:flex-row'>
-              <img className='rounded-xl' src="/esg/airplane.png" alt="" />
+              <img className='rounded-xl mb-5 md:mb-0' src="/esg/airplane.png" alt="" />
 
-              <img className='rounded-xl' src="/esg/car-dashboard.png" alt="" />
+              <img className='rounded-xl mb-5 md:mb-0' src="/esg/car-dashboard.png" alt="" />
 
               <img className='rounded-xl' src="/esg/products.png" alt="" />
             </div>
 
             <div className='w-full mt-4 pb-3 '>
-              <img className='rounded-xl w-full' src="/esg/next.png" alt="" />
+              <img className='rounded-xl w-full ' src="/esg/next.png" alt="" />
             </div>
           </div>
 
