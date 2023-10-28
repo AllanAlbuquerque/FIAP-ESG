@@ -9,55 +9,58 @@ import { useEffect, useState } from 'react';
 
 
 
-const Chatbot = ()=> {
+const Chatbot = () => {
 
-    const [loading, setLoading ] = useState(false);
-    const [data, setData] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [data , setData] = useState(null);
 
 
     const fetchChat = async () => {
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/chatbot_api/init',  {
+            const response = await fetch('http://127.0.0.1:8000/chatbot_api/init', {
                 method: 'GET',
-                headers: new Headers({ 'Content-type': 'application/json'}),
+                headers: new Headers({ 'Content-type': 'application/json' }),
                 mode: 'cors'
-        });
+            });
             const data = await response.json();
-            setLoading(true)
-
             console.log('loanding:', loading)
 
             if (!data)
                 throw 'Problema na requisição';
 
-            setData(data);
+       
+            if (data) {
+                setLoading(true)
+                console.log(data.chat)
+                setData(data.chat);
+            }
 
 
 
         } catch (error) {
             console.log(error)
         } finally {
-            setLoading(false);
+        
         }
     }
 
-    
 
-    useEffect( ()=>{
+
+    useEffect(() => {
         console.log('carai bixo')
         fetchChat();
-    },[] )
+    }, [])
 
-    console.log('data:',data)
+    console.log('data:', data)
 
 
     return (
         <>
             <div>
                 {
-                   ( loading && !data)
-                        ? <div className='chatbotabert'> dsdsd </div>
+                    loading
+                        ? <div className='chatbotabert'>  {data} </div>
                         : <div className='chatbotClose'  ></div>
                 }
             </div>
