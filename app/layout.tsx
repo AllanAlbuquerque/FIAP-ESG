@@ -1,7 +1,13 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import './globals.css';
 import './navbar.css';
+
+import React from 'react';
+import Chatbot from './components/chatbot';
+
+//import { useEffect } from 'react';
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,6 +15,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+
   return (
     <html lang='en'>
       <body>
@@ -70,8 +77,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </nav>
-
         {children}
+
+        <Chatbot/>
+
+
       </body>
     </html>
   );
