@@ -1,0 +1,28 @@
+.chatbotContent{
+    margin: 0px 10px;
+    height: 430px;
+    border: 1px solid black;
+    background-color:  #fff;
+}
+
+.chatbotFrom{
+    margin: 10px;
+}
+
+.chatbotFrom button{
+    border: 1px solid black;
+    padding: 3px 10px;
+    background-color: #fff;
+}
+
+.chatbotFrom input{
+    border: 1px solid black;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+.btnClose{
+    margin: 0 10px;
+    display: flex;
+    direction: rtl;
+}
