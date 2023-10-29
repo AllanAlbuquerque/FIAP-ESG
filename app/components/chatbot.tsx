@@ -19,6 +19,7 @@ const Chatbot = () => {
     const [tags, setTags] = useState("");
 
     const [artists, setArtists] = useState<string[]>([]);
+   // const [chatUsuario, setChatUsuario] = useState<string[]>([]);
 
 
 
@@ -42,7 +43,7 @@ const Chatbot = () => {
                 setLoading(true)
                 console.log(data.chat)
                 setData(data.chat);
-                setArtists([...artists, ('robot: ' + data.chat)])
+                setArtists([...artists, ('' + data.chat)])
             }
 
 
@@ -54,7 +55,7 @@ const Chatbot = () => {
         }
     }
 
-    const fetchInteraction = async () => {
+    const fetchInteraction = async (valor:string) => {
         try {
             const response = await fetch('http://127.0.0.1:8000/chatbot_api/chat', {
                 method: 'POST',
@@ -74,7 +75,7 @@ const Chatbot = () => {
                 throw 'Problema na requisição';
 
             console.log(data.description)
-            setArtists([...artists, ('robot: ' + data.description)])
+            setArtists([...artists, ('' + valor), ('' + data.description)])
 
 
 
@@ -107,10 +108,17 @@ const Chatbot = () => {
     }
 
     function sendMessageChatbot() {
-        setArtists([...artists, ('eu: ' + tags)])
+        setArtists([...artists, ('...atualizado')])
+
+        //console.log(chatUsuario)
+        const valor = tags;
         setTags('');
 
-        fetchInteraction();
+
+        setTimeout(() => {
+            console.log(artists)
+            fetchInteraction(valor);
+        }, 1000)
     }
 
 
@@ -121,17 +129,19 @@ const Chatbot = () => {
                 {
                     loading
                         ? <div className='chatbotabert'>
-                            <div className='btnClose'><button onClick={closeChatbot}>X</button> </div>
+                            <div className='btnClose'> <div></div> <span>CHATBOT</span>  <button onClick={closeChatbot}>X</button> </div>
                             <div className="chatbotContent">
                                 {
-                                    artists.map( (artist, index) => (
-                                        <p key={index}>{artist}</p>
+                                    artists.map((artist, index) => (
+
+                                        artist !="...atualizado" ? (<p key={index}> <b>{ index%2==0 ? "ecomind robot: " : "eu: " }</b> {artist}</p>) : (<p>{artist}</p>)
+                                           
                                     ))
                                 }
 
                             </div>
                             <div className='chatbotFrom'>
-                                <input name='tags' id="tags" placeholder='tags(, seperated)' value={tags} onChange={e => setTags(e.target.value)} />
+                                <input name='tags' id="tags" placeholder='Qual é a sua dúvida?' value={tags} onChange={e => setTags(e.target.value)} />
                                 <button onClick={sendMessageChatbot}> enviar </button>
                             </div>
                         </div>
