@@ -103,13 +103,12 @@ const Chatbot = () => {
             </div>
             <div className='chatbotContent'>
               {artists.map((artist, index) =>
-                artist != '...atualizado' ? (
+                artist !== '...atualizado' ? (
                   <p key={index}>
-                    {' '}
-                    <b>{index % 2 == 0 ? 'ecomind robot: ' : 'eu: '}</b> {artist}
+                    <b>{index % 2 === 0 ? 'ecomind robot: ' : 'eu: '}</b> {artist}
                   </p>
                 ) : (
-                  <p>{artist}</p>
+                  <p key={index}>{artist}</p>
                 )
               )}
             </div>
