@@ -4,8 +4,8 @@ import FooterEsg from '../components/footerEsg';
 import { useEffect, useState } from 'react';
 
 const Esg = () => {
-  const [user, setUser] = useState(null);
-  const [activity, setActivity] = useState(null);
+  const [user, setUser] = useState<any>({});
+  const [activity, setActivity] = useState<any[]>([]);
   const userID = 1;
 
   const fetchUser = async () => {
@@ -82,7 +82,7 @@ const Esg = () => {
                   <img className='mt-2' src='/esg/coin.svg' alt='' />
 
                   <div className=''>
-                    <h1 className='text-emerald-700 text-5xl font-extrabold'>{user.ecocoins}</h1>
+                    <h1 className='text-emerald-700 text-5xl font-extrabold'>{user?.ecocoins}</h1>
                     <p className='text-emerald-700 text-2xl ml-8'>ecocoins</p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const Esg = () => {
             <div className='w-1/4 h-full bg-zinc-200 rounded-lg p-3 shadow-xl  w-full md:w-1/4 pb-5 md:pb-3'>
               <div className='mt-3 border-b-2 border-zinc-300'>
                 <div className='flex justify-around items-center pb-3'>
-                  <h1 className='font-bold'> NÍVEL {user.level} </h1>
+                  <h1 className='font-bold'> NÍVEL {user?.level} </h1>
                   <button>
                     <a className='text-emerald-500 text-sm' href=''>
                       Ver todos os níveis

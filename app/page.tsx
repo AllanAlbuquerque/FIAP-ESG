@@ -2,27 +2,7 @@
 import { Inter } from 'next/font/google';
 import './page.css';
 
-
-const inter = Inter({ subsets: ['latin'] });
-
 const Home = () => {
-  const description = {
-    Environmental: 'Refere-se a tudo relacionado ao meio ambiente natural e ao impacto das atividades humanas nesse ambiente.',
-    Social: 'Refere-se às questões relacionadas às todas práticas sociais e de responsabilidade corporativa das empresas.',
-    Governance:
-      'Refere-se às práticas de governança corporativa adotadas pelas empresas para garantir a transparência, ética e responsabilidade em suas operações.',
-  };
-
-  // function setDescText(event: Event) {
-  //   const element = event.target.querySelector('.buttonDescr');
-  //   element.innerHTML = description[event.target.id];
-  // }
-
-  // function removeDescText(event: Event) {
-  //   const element = event.target.querySelector('.buttonDescr');
-  //   element.innerHTML = '';
-  // }
-
   return (
     <>
       <main className='mb-4'>
